@@ -14,15 +14,16 @@
 <body>
     <div class='container'>
         <h1> Dog Picture Generator </h1>
-        <form id="numSelect">
-            <input type="text" placeholder="Enter Number 3-50" id="numDogs" onfocus="this.placeholder = ''">
-        </form>
         
+        <form id="breedSelect hidden">
+            <h2> Select Your Breed</h2>
+            <input type="text" name="Select Breed" id="selectBreed">
+
+        </form>
         <form class="submitButton">
             <input type="submit" value="Generate Dog Picture!">
         </form>
         <section class="results hidden">
-            <h2>Who's a good boy/girl?</h2>
             <img class="results-img" alt="placeholder">
         </section>
     </div>
