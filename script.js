@@ -26,7 +26,7 @@ function getImages(numOfDogImages) {
 
     function selectDogBreed(){
         let dogBreed = $('#selectBreed').val();
-        return dogBreed;
+        return dogBreed.toLowerCase().trim();
         
         
 
