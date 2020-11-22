@@ -17,9 +17,10 @@ function getImages(numOfDogImages) {
             alert('We could not find that breed. Please try another.')
         } else if (responseJson.status === "success") {
                 $('.results').replaceWith(`<img src="${responseJson.message}" class= "results">`);
+                $('.results').removeClass('hidden');
             };
             //remove hidden class
-            $('.results').removeClass('hidden');
+            
  
         }
     
